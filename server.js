@@ -25,4 +25,10 @@ app.get('/', (req, res) => {
 });
 
 
-console.log("Server listening on port " + port);
+if (process.env) {
+    console.log("Nodejs Server listening on port " + process.env.OPENSHIFT_NODEJS_PORT);
+    console.log("IP Server listening on IP " + ip);
+}
+
+console.log("Nodejs Server listening on port " , port);
+console.log("Nodejs Server listening on port " , ip);
