@@ -1,0 +1,28 @@
+{
+  "name": "did",
+  "version": "1.0.0",
+  "description": "developer ideas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikkamarthi/did.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikkamarthi/did/issues"
+  },
+  "homepage": "https://github.com/karthikkamarthi/did#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1",
+    "webpack": "^4.1.1"
+  }
+}
