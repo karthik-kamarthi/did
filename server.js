@@ -2,8 +2,8 @@ var express = require('express'),
     app     = express(),
     path =  require('path');
 
-var appPort = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-	ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+var appPort = process.env.OPENSHIFT_NODEJS_PORT || 8080,
+	ip   = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 
     var http = require('http')
