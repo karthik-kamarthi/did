@@ -12,9 +12,7 @@ var appPort = process.env.OPENSHIFT_NODEJS_PORT || 8080,
     server.listen(appPort, ip);
 
 
-app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
-app.use('/scripts', express.static(path.join(__dirname, 'public/scripts')));
-app.use('/styles', express.static(path.join(__dirname, 'public/styles')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
